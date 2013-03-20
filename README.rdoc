@@ -1,3 +1,12 @@
-= basic_basic_authentication
+= redmine_http_basic_authentication
 
-Description goes here
+The purpose of this plugin is to hide the standard login form of Redmine.
+This plugin can be useful if your redmine goes Internet without a reverse proxy and you want to keep the login process on Redmine.
+
+
+== Installation
+
+* Import project from github into your redmine plugins' directory
+ * git clone https://github.com/pburgisser/redmine_http_basic_authentication.git
+* Install the plugin on redmine
+ * rake redmine:plugins:migrate
