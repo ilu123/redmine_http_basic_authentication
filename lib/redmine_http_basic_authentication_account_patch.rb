@@ -17,7 +17,7 @@ module RedmineHttpBasicAuthenticationAccountPatch
 			elsif request.post?
 				logout_user
 			end
-			render :text => "You session is now over, please <a href=\"javascript:window.open('', '_self', '');window.close();\">close your tab/window</a>", status: :unauthorized
+			render :text => "You session is now over, please <a href=\"/redmine\">close your tab/window</a>", status: :unauthorized
 		end
 		
         def login_with_http_basic()
